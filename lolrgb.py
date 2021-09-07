@@ -122,7 +122,6 @@ class LOLRGB:
 
     def set_delay(self, delay, persist=True):
         # number of seconds between each column of pixels drawn to the display
-        delay = int(delay)
         if delay < 0:
             raise ValueError('Please provide a delay >= 0')
         if persist:
